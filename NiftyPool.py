@@ -750,6 +750,7 @@ async def main():
                             continue
                             
                         # Confirm current message delay
+                        global DELAY_BETWEEN_MESSAGES
                         print_info(f"Current delay between messages: {DELAY_BETWEEN_MESSAGES} seconds")
                         change_delay = input(f"{Fore.WHITE}Change message delay? {Fore.CYAN}(y/N){Fore.WHITE}: {Style.BRIGHT}").lower() == 'y'
                         
